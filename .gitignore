@@ -1,0 +1,18 @@
+# Cursor関連ファイル
+.cursor/
+
+# Go関連の一般的な除外設定
+/bin/
+/vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# OS関連
+.DS_Store
+Thumbs.db 
