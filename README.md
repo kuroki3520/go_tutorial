@@ -35,6 +35,6 @@ go mod tidy  # 依存関係を整理
 2. ✅ Call your code from another module -- Import and use your new module.
 3. ✅ Return and handle an error -- Add simple error handling.
 4. ✅ Return a random greeting -- Handle data in slices (Go's dynamically-sized arrays).
-5. ⬜️ Return greetings for multiple people -- Store key/value pairs in a map.
+5. ✅ Return greetings for multiple people -- Store key/value pairs in a map.
 6. ⬜️ Add a test -- Use Go's built-in unit testing features to test your code.
 7. ⬜️ Compile and install the application -- Compile and install your code locally. 
