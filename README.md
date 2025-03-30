@@ -1,19 +1,24 @@
 # Go Tutorial Project
 
-このリポジトリは、Goプログラミング言語の学習と練習のためのプロジェクトです。
+このリポジトリは、[Go公式チュートリアル](https://go.dev/doc/tutorial/create-module)に沿って学習するためのプロジェクトです。
 
-## 構成
+## プロジェクト構成
 
-- `cmd/`: アプリケーションのエントリーポイントを含むディレクトリ
-- `pkg/`: 外部アプリケーションで使用可能なライブラリコードを含むディレクトリ
-- `internal/`: 内部パッケージを含むディレクトリ
+- `greetings/`: 再利用可能なモジュールとして実装された挨拶機能
+  - `greetings.go`: 挨拶機能の実装
+  - `go.mod`: モジュール定義ファイル
+
+- `hello/`: greetingsモジュールを使用するサンプルアプリケーション
+  - `main.go`: アプリケーションのエントリーポイント
+  - `go.mod`: モジュール定義ファイル
 
 ## 実行方法
 
-基本的なHello Worldプログラムを実行するには：
+helloアプリケーションを実行するには：
 
 ```bash
-go run hello.go
+cd hello
+go run .
 ```
 
 ## 依存関係の管理
@@ -22,4 +27,14 @@ go run hello.go
 
 ```bash
 go mod tidy  # 依存関係を整理
-``` 
+```
+
+## チュートリアルの進捗
+
+1. ✅ Create a module -- Write a small module with functions you can call from another module.
+2. 🔄 Call your code from another module -- Import and use your new module.
+3. ⬜️ Return and handle an error
+4. ⬜️ Return a random greeting
+5. ⬜️ Return greetings for multiple people
+6. ⬜️ Add a test
+7. ⬜️ Compile and install the application 
