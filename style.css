@@ -1,0 +1,87 @@
+/* style.css */
+
+/* Popup styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 300px; /* Adjusted width for better layout */
+  padding: 15px;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0; /* Remove default body margin */
+}
+
+h2, h3 {
+  color: #4285F4; /* Google Blue */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+textarea#inputText {
+  width: calc(100% - 22px); /* Full width minus padding and border */
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+select#targetLanguage {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+}
+
+button#translateButton {
+  background-color: #4285F4; /* Google Blue */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Make button full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+button#translateButton:hover {
+  background-color: #357ae8; /* Darker blue on hover */
+}
+
+div#outputText {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 50px;
+  font-size: 14px;
+  white-space: pre-wrap; /* Preserve whitespace and newlines */
+  word-wrap: break-word; /* Break long words */
+}
+
+/* Content script button style (replaces inline styles in content.js) */
+#geminiTranslateButtonInPage { /* Renamed to avoid conflict if popup ID was the same */
+  position: absolute;
+  z-index: 10000;
+  background-color: #4285F4; /* Google blue */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#geminiTranslateButtonInPage:hover {
+  background-color: #357ae8; /* Darker blue on hover */
+}
